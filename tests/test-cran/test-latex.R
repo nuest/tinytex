@@ -26,4 +26,6 @@ assert('detect_files() can detect filenames from LaTeX log', {
   (detect_files("! Package fontenc Error: Encoding file `t2aenc.def' not found.") %==% 't2aenc.def')
 
   (detect_files("! I can't find file `hyph-de-1901.ec.tex'.") %==% 'hyph-de-1901.ec.tex')
+
+  (detect_files("I couldn't open style file plainurl.bst") %==% 'plainurl.bst')
 })
